@@ -28,16 +28,6 @@ export default function Home() {  const hello = api.post.hello.useQuery({ text: 
                 le animal is not in any danger
               </div>
             </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Emergency? →</h3>
-              <div className="text-lg">
-                be connected to one of our many operators instantly :D
-              </div>
-            </Link>
           </div>
           <p className="text-2xl text-white">
             {hello.data ? hello.data.greeting : "Loading tRPC query..."}
