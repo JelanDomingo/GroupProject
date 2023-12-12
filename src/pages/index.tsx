@@ -29,9 +29,7 @@ export default function Home() {  const hello = api.post.hello.useQuery({ text: 
               </div>
             </Link>
           </div>
-          <p className="text-2xl text-white">
-            {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-          </p>
+          
         </div>
       </main>
     </>
