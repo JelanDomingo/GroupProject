@@ -4,7 +4,7 @@ export default function FirstPost() {
   return (
     <>
 
-<div className="hero min-h-screen" style={{backgroundImage: 'https://th.bing.com/th/id/OIP.OUKcIY4pZsS802GH3j0-JAHaE7?w=512&h=341&rs=1&pid=ImgDetMain'}}>
+<div className="hero min-h-screen" style={{backgroundImage: 'url(https://fishsubsidy.org/wp-content/uploads/2020/02/sea-turtle.jpg)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
