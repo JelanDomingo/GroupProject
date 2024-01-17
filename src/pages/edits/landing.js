@@ -21,6 +21,15 @@ export default function FirstPost() {
       <h3>
         Big Island
       </h3>
+      <Link
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/edits/logan"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">logan? →</h3>
+              <div className="text-lg">
+              </div>
+            </Link>
       <h3>
         Oahu
       </h3>
