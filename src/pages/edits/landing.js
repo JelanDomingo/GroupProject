@@ -22,11 +22,14 @@ export default function FirstPost() {
         Big Island
       </h3>
       <h2>
+        <button>
         <Link href="/edits/jelingling">Jelan</Link>
+        </button>
       </h2>
       <h2>
         <Link href="/edits/logan">Logan</Link>
       </h2>
+      
     </>
   );
 }
