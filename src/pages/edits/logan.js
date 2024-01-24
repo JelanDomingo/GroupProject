@@ -3,9 +3,10 @@ export default function Page() {
     return(
         <>
         <h1>The thing</h1>
-        <h2>
+        <button className = "btn">
             <Link href="/edits/landing">Back</Link>
-        </h2>
+        </button>
+        
         </>
     );
 }
