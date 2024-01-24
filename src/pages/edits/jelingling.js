@@ -4,7 +4,7 @@ export default function Page() {
         <>
         <h1>The thing</h1>
         <h2>
-            <Link href="/">Back to home</Link>
+            <Link href="/edits/landing">Back</Link>
         </h2>
         </>
     );
