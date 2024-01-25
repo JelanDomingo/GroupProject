@@ -3,9 +3,11 @@ export default function Page() {
     return(
         <>
         <h1>Logan's Page</h1>
+        <h2>
         <button className = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
             <Link href="/">Back to home</Link>
         </button>
+        </h2>
 
         
         </>
