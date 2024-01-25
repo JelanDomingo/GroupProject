@@ -16,7 +16,7 @@ export default function Page() {
           className="dropdown"
             >
                 <summary
-                className="m-1 btn">
+                className="m-1 btn btn-secondary">
                     What Island?
                 </summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
