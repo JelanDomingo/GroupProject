@@ -23,9 +23,9 @@ export default function Home() {  const hello = api.post.hello.useQuery({ text: 
               href="/edits/landing"
               target="_blank"
             >
-              <h3 className="text-2xl font-bold">Sighting? →</h3>
+              <h3 className="text-2xl font-bold">Landing page →</h3>
               <div className="text-lg">
-                le animal is not in any danger
+                welcome!
               </div>
             </Link>
           </div>
