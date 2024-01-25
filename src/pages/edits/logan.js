@@ -3,12 +3,14 @@ export default function Page() {
     return(
         <>
         <h1>Logan's Page</h1>
-        <h2>
-        <button className = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            <Link href="/">Back to home</Link>
-        </button>
-        </h2>
-        <Link
+
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
+        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+            I HATE SEA TURTLES
+          </h1>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+          <Link
               className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
               href="/edits/landing"
               target="_blank"
@@ -18,6 +20,10 @@ export default function Page() {
                 le animal is not in any danger
               </div>
             </Link>
+          </div>
+          
+        </div>
+      </main>
 
         
         </>
