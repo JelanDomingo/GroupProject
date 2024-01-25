@@ -9,19 +9,27 @@ export default function Page() {
         <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            I HATE SEA TURTLES
+            Sighting
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="/edits/landing"
-              target="_blank"
+          <details 
+          className="dropdown"
             >
-              <h3 className="text-2xl font-bold">Sighting? →</h3>
-              <div className="text-lg">
-                le animal is not in any danger
-              </div>
-            </Link>
+                <summary
+                className="m-1 btn">
+                    What Island?
+                </summary>
+                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                    <li><a>Big Island</a></li>
+                    <li><a>Maui</a></li>
+                    <li><a>Kaho'olawe</a></li>
+                    <li><a>Lana'i</a></li>
+                    <li><a>Moloka'i</a></li>
+                    <li><a>O'ahu</a></li>
+                    <li><a>Kaua'i</a></li>
+                    <li><a>Ni'ihau</a></li>
+                </ul>
+            </details>
           </div>
           
         </div>
