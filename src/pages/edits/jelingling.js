@@ -29,7 +29,7 @@ export default function Page() {
           </div>
           <button className="btn btn-neutral">
             <Link href="/edits/logan">
-            </Link>
+            Next</Link>
           </button>
         </div>
       </main>
