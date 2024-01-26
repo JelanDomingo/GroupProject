@@ -27,7 +27,7 @@ export default function Page() {
         </select>
       </label>
           </div>
-          <button className="btn btn-neutral">
+          <button className="btn glass">
             <Link href="/edits/logan">
             Next</Link>
           </button>
