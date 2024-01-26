@@ -13,21 +13,24 @@ export default function Page() {
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           <label className="form-control w-full max-w-xs">
-  <div className="label">
-    <span className="label-text">Choose which island</span>
-  </div>
-  <select className="select select-bordered">
-    <option disabled selected>Pick Island</option>
-    <option>Big Island</option>
-    <option>Kaua'i</option>
-    <option>Lana'i</option>
-    <option>Maui</option>
-    <option>Moloka'i</option>
-    <option>O'ahu</option>
-  </select>
-</label>
+            <div className="label">
+            <span className="label-text">Choose which island</span>
           </div>
-          
+          <select className="select select-bordered">
+            <option disabled selected>Pick Island</option>
+            <option>Big Island</option>
+            <option>Kaua'i</option>
+            <option>Lana'i</option>
+            <option>Maui</option>
+            <option>Moloka'i</option>
+            <option>O'ahu</option>
+        </select>
+      </label>
+          </div>
+          <button className="btn btn-neutral">
+            <Link href="/edits/logan">
+            </Link>
+          </button>
         </div>
       </main>
         </>
