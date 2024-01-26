@@ -49,6 +49,7 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
       </svg>
 
     </a>
+    <Link href="/edits/landing"></Link>
   </li>
   <li>
     <a>
