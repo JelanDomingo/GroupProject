@@ -47,15 +47,15 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
       <li>
         <details>
           <summary>
-            Parent
+            Menu
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
             <li><a><Link href="/edits/landing">Home</Link></a></li>
             <li><a><Link href="/edits/jelingling">Report a sighting!</Link></a></li>
+            <li><a><Link href="/edits/emergency">About Us!</Link></a></li>
           </ul>
         </details>
       </li>
@@ -82,6 +82,7 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
           </div>
           
         </div>
+
       </main>
     </>
   );
