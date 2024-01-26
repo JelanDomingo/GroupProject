@@ -41,23 +41,27 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
   return (
     <>
       <h1>
-      <ul className="menu menu-horizontal bg-base-200 rounded-box">
-  <li>
-    <a>
-      <svg xmlns="/edits/landing" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-      <Link href="/edits/landing"></Link>
-      </svg>
-
-    </a>
-    <Link href="/edits/landing"></Link>
-  </li>
-  <li>
-    <a>
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-      <Link href="/edits/jelingling"></Link>
-    </a>
-  </li>
-</ul>
+      <div className="navbar bg-base-100">
+  <div className="flex-1">
+    <a className="btn btn-ghost text-xl">IHATESEATURTS</a>
+  </div>
+  <div className="flex-none">
+    <ul className="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>
+            Parent
+          </summary>
+          <ul className="p-2 bg-base-100 rounded-t-none">
+            <li><a><Link href="/edits/landing">Home</Link></a></li>
+            <li><a><Link href="/edits/jelingling">Report a sighting!</Link></a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
       </h1>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#6fa8dc] to-[#0b5394]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
