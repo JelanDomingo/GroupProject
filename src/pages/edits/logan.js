@@ -4,12 +4,12 @@ export default function Page() {
         <>
         <h1>Emergency</h1>
         <h2>
-          <Link href="/edits/jelingling">Back</Link>
+          <Link href="/edits/landing">Back</Link>
         </h2>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#6fa8dc] to-[#0b5394]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Emergency Details
+            Logan's Page
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           <label className="form-control w-full max-w-xs">
