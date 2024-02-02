@@ -82,7 +82,7 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
           </div>
           
         </div>
-          <div className="grid grid-cols-2 gap-1 sm:grid-cols-4 md:gap-16">
+          <div className="grid grid-cols-2 gap-1 sm:grid-cols-4 md:gap-2">
           <Link
               className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
               href="/edits/logan"
