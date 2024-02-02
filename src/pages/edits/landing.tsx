@@ -79,6 +79,16 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
                 le animal is not in any danger
               </div>
             </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/edits/logan"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">Emergency? →</h3>
+              <div className="text-lg">
+                le animal is in mucho danger
+              </div>
+            </Link>
           </div>
           
         </div>
