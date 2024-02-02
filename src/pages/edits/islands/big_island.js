@@ -4,7 +4,7 @@ export default function Page() {
         <>
         <h1>The thing</h1>
         <h2>
-            <Link href="/edits/landing">Back</Link>
+            <Link href="/edits/jelingling">Back</Link>
         </h2>
         <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#6fa8dc] to-[#0b5394]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
