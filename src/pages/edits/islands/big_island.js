@@ -11,7 +11,7 @@ export default function Page() {
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             Big Island
           </h1>
-          <button className="btn glass">
+          <button className="btn btn-neutral">
             <Link href="/edits/logan">
             Next</Link>
           </button>
