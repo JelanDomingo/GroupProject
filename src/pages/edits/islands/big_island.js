@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 export default function Page() {
     return(
@@ -11,7 +12,7 @@ export default function Page() {
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             Big Island
           </h1>
-          <button className="btn glass">
+          <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             <Link href="/edits/logan">
             Next</Link>
           </button>
