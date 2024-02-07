@@ -18,9 +18,6 @@ export default function Page() {
               target="_blank"
             >
               <h3 className="text-2xl font-bold">Back? →</h3>
-              <div className="text-lg">
-                le animal is not in any danger
-              </div>
             </Link>
         </div>
       </main>
