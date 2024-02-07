@@ -21,11 +21,21 @@ export default function Page() {
               <li><a><Link 
               className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
               href = "/edits/islands/big_island">Big Island</Link></a></li>
-              <li><a>Maui</a></li>
-              <li><a>O'ahu</a></li>
-              <li><a>Kauai</a></li>
-              <li><a>Lanai</a></li>
-              <li><a>Moloka'i</a></li>
+              <li><a><Link 
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href = "/edits/islands/maui">Maui</Link></a></li>
+              <li><a><Link 
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href = "/edits/islands/oahu">O'ahu</Link></a></li>
+              <li><a><Link 
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href = "/edits/islands/kauai">Kauai</Link></a></li>
+              <li><a><Link 
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href = "/edits/islands/lanai">Lanai</Link></a></li>
+              <li><a><Link 
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href = "/edits/islands/molokai">Moloka'i</Link></a></li>
             </ul>
           </details>
           </div>
