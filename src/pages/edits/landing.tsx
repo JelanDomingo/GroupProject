@@ -54,8 +54,8 @@ export default function FirstPost() {  const hello = api.post.hello.useQuery({ t
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
             <li><a><Link href="/edits/landing">Home</Link></a></li>
-            <li><a><Link href="/edits/jelingling">Report a sighting!</Link></a></li>
-            <li><a><Link href="/edits/emergency">About Us!</Link></a></li>
+            <li><a><Link href="/edits/sighting_landing">Report a sighting!</Link></a></li>
+            <li><a><Link href="/edits/abtus">About Us!</Link></a></li>
           </ul>
         </details>
       </li>
