@@ -34,7 +34,10 @@ export default function ABTUS() {  const hello = api.post.hello.useQuery({ text:
       </h1>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#6fa8dc] to-[#0b5394]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-
+        <h3 className="text-2xl font-bold">About Us! →</h3>
+              <div className="text-lg">
+                One day in 1999, a young man's father was killed by a sea turtle. Since that day, he has dedicated his life to killing turts. help us in our mission by locating them turtys so that they may be dispatched in the most inhumane fashion.
+              </div>
         </div>
           
 
