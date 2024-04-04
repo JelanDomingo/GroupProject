@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import { api } from "~/utils/api";
 
-export default function Home() {  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+export default function Home() {  
+  //const hello = api.post.hello.useQuery({ text: "from tRPC" });
+  const data = api.post.getLatest.useQuery().data;
 
   return (
     <>
@@ -29,7 +31,9 @@ export default function Home() {  const hello = api.post.hello.useQuery({ text: 
               </div>
             </Link>
           </div>
-          
+          <div>
+            {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
+          </div>
         </div>
       </main>
     </>

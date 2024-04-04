@@ -1,5 +1,7 @@
 import Link from 'next/link';
+//import {main} from 'server';
 export default function Page() {
+  //main()
     return(
         <>
         <h1>Emergency</h1>

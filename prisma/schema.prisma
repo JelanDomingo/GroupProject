@@ -8,11 +8,13 @@ generator client {
 
 datasource db {
     provider = "mongodb"
-    url      = env("mongodb+srv://nick_orpilla:pass_123@beaches.wbdbuys.mongodb.net/sales")
+    url      = env("DATABASE_URL")
 }
 
 model Post {
-    id        String @id @default(dbgenerated()) @map("_id") @db.ObjectId
-    title     String
-    body      String
+    id        String @id @default(auto()) @map("_id") @db.ObjectId
+    email     String 
+    authorID      String?
+    content   String
 }
+                
