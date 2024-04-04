@@ -36,7 +36,7 @@ import { api } from "~/utils/api";
   );
 }*/
 
-export default function FirstPost() {  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+export default function FirstPost() {  const data = api.post.getLatest.useQuery().data;
 
   return (
     <>
