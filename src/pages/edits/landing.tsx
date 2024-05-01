@@ -36,7 +36,7 @@ import { api } from "~/utils/api";
   );
 }*/
 
-export default function FirstPost() {  const data = api.post.getLatest.useQuery().data;
+export default function FirstPost() { const data = api.post.getLatest.useQuery().data;
 
   return (
     <>

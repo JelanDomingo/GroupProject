@@ -1,6 +1,11 @@
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
+import { data } from "tailwindcss/defaultTheme";
+
+import { api } from "~/utils/api";
 //import {main} from 'server';
 export default function Page() {
+  const data = api.post.getLatest.useQuery().data;
   //main()
     return(
         <>
@@ -18,16 +23,40 @@ export default function Page() {
           <div className="label">
             <span className="label-text">What Happened?</span>
           </div>
+          {/*CHANGE THIS LATER, JUST TRYNA SEE HOW MONGO WORKS WITH A DROPDOWN*/}
           <select className="select select-bordered">
-            <option disabled selected>Pick Emergency</option>
-            <option>Injury</option>
+            <option disabled selected>What Beach?</option>
+            <option><div className="overflow-x-auto relative h-screen font-mhs text-white">
+              <table className="wfull">
+              <tbody className=" ">
+                  {data?.map(({id, email, content}) => (
+                    <tr key={id} className="border-b-2">
+                      <td className="w2/12">
+                        {content}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              </div>
+            </option>
             <option>Caught in Reef</option>
             <option>Oil?</option>
             <option>Other</option> {/*Maybe add a text thing to specify what they mean by other*/}
           </select>
+          {/*TEST END*/}
         </label>
           </div>
-
+          <table>
+                <tr>
+                  <td>{data?.map(({content}) => (content == "Kapiolani Beach Park") ? (<div>{content}</div>): (<div></div>))}</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Content</td>
+                  <td>Email</td>
+                </tr>
+          </table>
           <div>
           <label className="form-control w-full max-w-xs">
           <div className="label">

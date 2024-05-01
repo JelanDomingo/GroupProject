@@ -30,9 +30,41 @@ export default function Home() {
                 welcome!
               </div>
             </Link>
-          </div>
-          <div>
-            {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
+            <Link
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/edits/landing"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">Beaches →</h3>
+              <div className="text-lg">
+                {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
+              </div>
+            </Link>
+            <div className="overflow-x-auto relative h-screen font-mhs text-white">
+              <table className="wfull">
+                <thead className="text-left">
+                  <tr className="border-b-2">
+                    <th className='w1/12 pb-2 pl-16'>ID</th>
+                    <th className='w-2/12'>email</th>
+                    <th className='w-1/12'>Content</th>
+                  </tr>
+                </thead>
+                <tbody className=" ">
+                  {data?.map(({id, email, content}) => (
+                    <tr key={id} className="border-b-2">
+                      {/* ID */}
+                      <td className="w-1/12 py-3 pl-16">{id + 1}</td>
+                      <td className="w-2/12">
+                        {email}
+                      </td>
+                      <td className="w2/12">
+                        {content}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              </div>
           </div>
         </div>
       </main>

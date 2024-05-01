@@ -1,20 +1,16 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-    provider = "prisma-client-js"
-    previewFeatures = ["mongodb"]
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
 }
 
 datasource db {
-    provider = "mongodb"
-    url      = env("DATABASE_URL")
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
 }
 
 model Post {
-    id        String @id @default(auto()) @map("_id") @db.ObjectId
-    email     String 
-    authorID      String?
-    content   String
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  authorID String
+  content  String
+  email    String
 }
-                
