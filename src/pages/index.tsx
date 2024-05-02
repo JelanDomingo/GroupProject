@@ -41,19 +41,17 @@ export default function Home() {
               </div>
             </Link>
             <div className="overflow-x-auto relative h-screen font-mhs text-white">
-              <table className="wfull">
+              <table className="wfull border">
                 <thead className="text-left">
                   <tr className="border-b-2">
-                    <th className='w1/12 pb-2 pl-16'>ID</th>
-                    <th className='w-2/12'>email</th>
-                    <th className='w-1/12'>Content</th>
+                    <th className='w-2/12' scope="col">Location</th>
+                    <th className='w-1/12' scope="col">Content</th>
                   </tr>
                 </thead>
                 <tbody className=" ">
-                  {data?.map(({id, email, content}) => (
-                    <tr key={id} className="border-b-2">
+                  {data?.map(({email, content}) => (
+                    <tr key={email} className="border-b-2">
                       {/* ID */}
-                      <td className="w-1/12 py-3 pl-16">{id + 1}</td>
                       <td className="w-2/12">
                         {email}
                       </td>
