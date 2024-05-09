@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import { api } from "~/utils/api";
 
-export default function Home() {  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+export default function Home() {  
+  //const hello = api.post.hello.useQuery({ text: "from tRPC" });
+  const data = api.post.getLatest.useQuery().data;
 
   return (
     <>
@@ -28,8 +30,40 @@ export default function Home() {  const hello = api.post.hello.useQuery({ text: 
                 welcome!
               </div>
             </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-10 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/edits/landing"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">Beaches →</h3>
+              <div className="text-lg">
+                {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
+              </div>
+            </Link>
+            <div className="overflow-x-auto relative h-screen font-mhs text-white">
+              <table className="wfull border">
+                <thead className="text-left">
+                  <tr className="border-b-2">
+                    <th className='w-2/12' scope="col">Location</th>
+                    <th className='w-1/12' scope="col">Content</th>
+                  </tr>
+                </thead>
+                <tbody className=" ">
+                  {data?.map(({email, content}) => (
+                    <tr key={email} className="border-b-2">
+                      {/* ID */}
+                      <td className="w-2/12">
+                        {email}
+                      </td>
+                      <td className="w2/12">
+                        {content}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              </div>
           </div>
-          
         </div>
       </main>
     </>

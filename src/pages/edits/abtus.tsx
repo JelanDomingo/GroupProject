@@ -5,7 +5,8 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 
 
-export default function ABTUS() {  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+export default function ABTUS() {  
+  const data = api.post.getLatest.useQuery().data;
 
   return (
     <>
